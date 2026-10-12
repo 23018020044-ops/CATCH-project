@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "CATCH - Coupon & Deal Hub",
+  "version": "1.0.0",
+  "description": "Contextual Automated Tracking, Comparison and Hub for Coupons",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
